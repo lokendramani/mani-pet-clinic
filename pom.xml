@@ -14,7 +14,7 @@
     </parent>
     <groupId>mani.springframework</groupId>
     <artifactId>mani-pet-clinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>mani-pet-clinic</name>
     <description>Mani Pet Clinic SpringBoot</description>
 
@@ -38,7 +38,7 @@
     </build>
     <scm>
         <developerConnection>scm:git:https://github.com/lokendramani/mani-pet-clinic.git</developerConnection>
-      <tag>mani-pet-clinic-0.0.1</tag>
+      <tag>HEAD</tag>
   </scm>
 
 </project>
