@@ -1,11 +1,11 @@
 package mani.springframework.manipetclinic.service.map;
 
 import mani.springframework.manipetclinic.model.Pet;
-import mani.springframework.manipetclinic.service.CrudService;
+import mani.springframework.manipetclinic.service.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet,Long> implements CrudService<Pet,Long> {
+public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetService {
     @Override
     public Pet findById(Long id){
 
