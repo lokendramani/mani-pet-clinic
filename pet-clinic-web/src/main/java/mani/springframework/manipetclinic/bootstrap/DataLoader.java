@@ -4,8 +4,6 @@ import mani.springframework.manipetclinic.model.Owner;
 import mani.springframework.manipetclinic.model.Vet;
 import mani.springframework.manipetclinic.service.OwnerService;
 import mani.springframework.manipetclinic.service.VetService;
-import mani.springframework.manipetclinic.service.map.OwnerServiceMap;
-import mani.springframework.manipetclinic.service.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -18,9 +16,10 @@ public class DataLoader implements CommandLineRunner {
 
 
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap() ;
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
 

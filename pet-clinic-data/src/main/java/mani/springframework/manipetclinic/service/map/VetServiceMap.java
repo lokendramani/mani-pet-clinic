@@ -2,9 +2,10 @@ package mani.springframework.manipetclinic.service.map;
 
 import mani.springframework.manipetclinic.model.Vet;
 import mani.springframework.manipetclinic.service.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
