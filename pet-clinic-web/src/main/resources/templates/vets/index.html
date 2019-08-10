@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'vets')}">
 <head>
     <meta charset="UTF-8">
     <title>List of Vets</title>
 </head>
 <body>
     <!--/*@thymesVar id="vet" type="mani.springframework.manipetclinic.model.Vet"*/-->
-    <h1 th:text="'List OF Vets'">List of Vets...</h1>
+    <h2 th:text="'List OF Vets'">List of Vets...</h2>
 
-    <table>
+    <table id="vets" class="table table-striped"s>
         <thead>
         <tr>
             <th>Id</th>
