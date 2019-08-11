@@ -1,12 +1,12 @@
 package mani.springframework.manipetclinic.service.map;
 
 import mani.springframework.manipetclinic.model.Speciality;
-import mani.springframework.manipetclinic.service.SpecialitiesService;
+import mani.springframework.manipetclinic.service.SpecialityService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 @Service
-public class SpecialityServiceMap extends AbstractMapService<Speciality, Long> implements SpecialitiesService {
+public class SpecialityServiceMap extends AbstractMapService<Speciality, Long> implements SpecialityService {
 
     @Override
     public Set<Speciality> findAll() {
